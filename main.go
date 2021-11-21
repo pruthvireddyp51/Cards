@@ -3,16 +3,14 @@ package main
 // import "fmt"
 
 func main() {
-	cards := deck{"Hello", cardName()}
-	cards = newDeck()
+	cards := newDeck()
 	// range is a default keyword
 	// for i, card := range cards{
 	// 	fmt.Println(i, card)
 	// }
 	// fmt.Println(cards)
+	// fmt.Println(cards.toByteSlice())
+	// cards := newDeckFromFile("HelloWorld")
+	cards.shuffel()
 	cards.print()
-}
-
-func cardName() string {
-	return "Name of the card"
 }
