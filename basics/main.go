@@ -1,7 +1,5 @@
 package main
 
-// import "fmt"
-
 func main() {
 	cards := newDeck()
 	// range is a default keyword
